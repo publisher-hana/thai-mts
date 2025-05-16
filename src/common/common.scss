@@ -88,11 +88,12 @@
     display: flex;
     padding: 0 2.133vw;
     align-items: center;
-    border-radius: 30px;
+    border-radius: 8vw;
     background-color: var(--surface-df);
     a{
       padding: 2.133vw;
       color: #fff;
+      font-size: var(--fz14);
     }
   }
 }

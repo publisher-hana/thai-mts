@@ -12,16 +12,16 @@
       display: inline-block;
       width: 4.267vw;
       height: 4.267vw;
-      background-image: url("/thai-mts-app/normal/icon_flag_set.png");
+      background-image: url("/thai-mts/normal/icon_flag_set.png");
       background-repeat: no-repeat;
       background-size: cover;
       margin-right: 1.066vw;
     }
     &.nasdak::before{
-      background-image: url("/thai-mts-app/normal/icon_flag_usa.png");
+      background-image: url("/thai-mts/normal/icon_flag_usa.png");
     }
     &.vietnam::before{
-      background-image: url("/thai-mts-app/normal/icon_flag_vni.png");
+      background-image: url("/thai-mts/normal/icon_flag_vni.png");
     }
   }
   .slick-slide{
