@@ -1,0 +1,118 @@
+.header{
+  display: flex;
+  gap:4.267vw;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  .logo{
+    width: 26.4vw; 
+    height: 5.333vw; 
+    background-image: url("/thai-mts/normal/logo.png"); 
+    background-repeat: no-repeat; 
+    background-size: 100%;
+  }
+
+  .top-display{
+    width: 36.8vw;
+    margin-top: -2vw;
+    padding: 1.06vw 2.12vw 0;
+    border-radius: 1.06vw;
+    background-color: var(--bg-secondary);
+    color: var(--txt);
+    white-space: nowrap; 
+    overflow: hidden;   
+    .val{
+      margin-left: 1.06vw;
+      padding-left: 4.267vw;
+      background-image: var(--bg-rise);
+      background-repeat: no-repeat;
+      background-position: 0 center;
+      background-size: 4.267vw;
+      color: var(--color-green);
+      font-weight: 500;
+      &.fall{
+        background-image: var(--bg-fall);
+        color: var(--color-red);
+      }
+
+    }
+  }
+  .r-icons{
+    display: flex;
+    gap:2.06vw;
+    align-items: center;
+    >a{
+      display: inline-block;
+      font-size:  6.4vw;
+      color: var(--primary);
+      &.alarm{
+        font-size: 6.933vw;;
+      }
+      &.member{
+        width: 6.4vw;
+        height: 6.4vw;
+        background-image: url("/thai-mts/normal/icon_avatar.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+    }
+  }
+}
+.nav{
+   padding:2.66vw 0;
+   background: linear-gradient(180deg, var(--bg-home-primary, #FCFCFC) 0%, var(--bg-home-secondary, #EAEEF5) 70%);
+   .inner{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-bottom: 1rem;
+   }
+  .home{
+    display: block;
+    width: 11.73vw;
+    height: 11.73vw;
+    border-radius: 50%;
+    border:4px solid var(--surface-df);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--surface-df);
+    font-size: 6.4vw;
+    background-color: #fff;
+  }
+  .nav-list{
+    width: 77.6vw;
+    height: 11.73vw;
+    display: flex;
+    padding: 0 2.133vw;
+    align-items: center;
+    border-radius: 30px;
+    background-color: var(--surface-df);
+    a{
+      padding: 2.133vw;
+      color: #fff;
+    }
+  }
+}
+/* dark mode*/
+.dark-mode {
+  .header{
+    .logo{
+      background-image: url("/thai-mts/dark/logo.png");
+    }
+    .r-icons{
+      .member{
+        background-image: url("/thai-mts/dark/icon_avatar.png");
+      }
+    }
+  }
+  .nav{
+    background: var(--bg-secondary);
+    .home{
+      background-color: var(--surface-df);
+      color: #fff;
+    }
+  }
+}

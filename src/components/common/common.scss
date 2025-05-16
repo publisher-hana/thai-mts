@@ -1,0 +1,23 @@
+.index-val{
+  display: block;
+  padding-left: 4.267vw;
+  background-image: var(--bg-rise);
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  background-size: 4.267vw;
+  color: var(--color-green);
+  &.fall{
+    background-image: var(--bg-fall);
+    color: var(--color-red);
+  }
+  &.fz14{
+    font-size:var(--fz14) !important;
+  }
+  &.fz16{
+    font-size: var(--fz16)  !important;
+  }
+  &.f-bold{
+    font-weight: bold !important;
+  }
+}
+

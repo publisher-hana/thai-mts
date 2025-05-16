@@ -1,0 +1,19 @@
+.dark-mode{
+  --primary:#ECEFF4;
+  --bg-secondary:#1D1F25;
+  --surface-df:#2C2F3A;
+  --txt:#B1BED1;
+  --border: #ECEFF4;
+  
+  background-color: var(--bg-secondary);
+  
+  button{
+    color: #fff;
+  }
+  .wrap{
+    background-color: var(--bg-secondary);
+    section{
+      background-color: #22242B;
+    }
+  }
+}

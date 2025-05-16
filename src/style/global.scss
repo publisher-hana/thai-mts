@@ -1,0 +1,60 @@
+@use './base';
+
+:root{
+  --fz10: 2.667vw;
+  --fz11: 2.933vw;
+  --fz12: 3.2vw;
+  --fz13: 3.467vw;
+  --fz14: 3.733vw;
+  --fz15: 4vw;
+  --fz16: 4.267vw;
+  --fz17: 4.533vw;
+  --fz18: 4.8vw;
+  --fz19: 5.067vw;
+  --fz20: 5.333vw;
+  --fz21: 5.6vw;
+  --fz22: 5.867vw;
+  --fz23: 6.133vw;
+  --fz24: 6.4vw;
+  --fz25: 6.667vw;
+  --fz26: 6.933vw;
+  --fz27: 7.2vw;
+  --fz28: 7.467vw;
+  --fz29: 7.733vw;
+  --fz30: 8vw;
+  --fz31: 8.267vw;
+  --fz32: 8.533vw;
+  --fz33: 8.8vw;
+  --fz34: 9.067vw;
+  --fz35: 9.333vw;
+  --fz36: 9.6vw;
+
+  --primary:#344152;
+  --bg-secondary:#F5F7F9;
+  --bg-gray:#6A7D97;
+  --surface-df:#1C478E;
+  --color-green:#008A1D;
+  --color-red:#D92D20;
+  --txt:#435369;
+  --border: #D4DBE6;
+  --bg-rise:url("/thai-mts-app/normal/icon_rise.png");
+  --bg-fall:url("/thai-mts-app/normal/icon_fall.png");
+}
+
+.wrap{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: #ECEFF4;
+  section{
+    padding:4.267vw 1rem; 
+    background-color: #fff;
+  }
+}
+.switch-box{
+  display: flex;
+  justify-content: flex-end;
+}
