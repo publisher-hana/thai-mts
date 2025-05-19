@@ -50,11 +50,21 @@
   overflow-x: hidden;
   background-color: #ECEFF4;
   section{
+    margin-bottom: 3.2vw;
     padding:4.267vw 1rem; 
     background-color: #fff;
+    .sec-tit{
+      margin-bottom: 4.267vw;
+      color: var(--primary);
+      font-size: var(--fz20);
+    }
   }
+  .slick-prev,.slick-next{
+    content: '';
+  }  
 }
 .switch-box{
   display: flex;
   justify-content: flex-end;
 }
+

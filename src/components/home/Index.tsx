@@ -15,30 +15,25 @@ const Index = () => {
   }
   return (
     <>
-    <div className="index-sec">
-      <Slider {...setting}>
-        <div className="slide-item">
-          <div className="label">SET</div>
-          <LineChart type="up" />
-          <div className="texts">
-            <IndexVal num="1,338.13" className="fz16 f-bold"/>
-            <span>-2.81 (-0.21%)</span>
+      <section className="index-sec">
+        <Slider {...setting}>
+          <div className="slide-item">
+            <div className="label">SET</div>
+            <LineChart type="up" />
+            <IndexVal num="1,338.13" className2="fz16" num2="-2.81 (-0.21%)"/>
           </div>
-        </div>
-        <div className="slide-item">
-          <div className="label nasdak">NASDAK</div>
-          <LineChart />
-          <div className="texts fall">
-            <IndexVal num="1,338.13" className="fz16 f-bold fall"/>
-            <span>-2.81 (-0.21%)</span>
+          <div className="slide-item">
+            <div className="label nasdak">NASDAK</div>
+            <LineChart />
+            <IndexVal num="1,338.13" className1="fall" className2="fz16" num2="-2.81 (-0.21%)"/>
           </div>
-        </div>
-        <div className="slide-item">
-          <div className="label vietnam">VIETNAM</div>
-          <LineChart />
-        </div>
-      </Slider>
-    </div>
+          <div className="slide-item">
+            <div className="label vietnam">VIETNAM</div>
+            <LineChart />
+            <IndexVal num="1,338.13" className1="fall" className2="fz16" num2="-2.81 (-0.21%)"/>
+          </div>
+        </Slider>
+      </section>
     </>
   )
 }

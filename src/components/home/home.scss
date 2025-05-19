@@ -39,14 +39,5 @@
     max-width: 300px;
     margin: 0 auto;
   }
-  .texts{
-    span{
-       font-size: 3.2vw;
-    }
-    &.fall{
-      color:var( --color-red);  
-    }
-    color:var( --color-green);
-  }
 }
 

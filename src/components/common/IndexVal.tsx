@@ -2,12 +2,17 @@ import './common.scss'
 
 interface Props {
   num: string;
-  className?: string;
+  className1?: string;
+  className2?: string;
+  num2: string;
 }
 
-const IndexVal = ({ num, className }: Props) => {
+const IndexVal = ({ num, className1,className2, num2 }: Props) => {
   return (
-     <span className={`index-val ${className || ''}`}>{num}</span>
+    <div className={`index-vals ${className1 || ''}`}>
+      <strong className={`index-main ${className2 || ''}`}>{num}</strong>
+      <span>{num2}</span>
+    </div>
   )
 }
 
