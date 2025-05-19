@@ -15,7 +15,9 @@ const Recommend = () => {
       <h2 className='sec-tit'>Finansia Recommend</h2>
       <Slider {...setting}>
           <div className="slide-item">
-            <div className='slide-in'></div>
+            <div className='slide-in'>
+              
+            </div>
 
           </div>
           <div className="slide-item">
