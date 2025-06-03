@@ -1,5 +1,5 @@
 import { MdOutlineStar } from "react-icons/md";
-import { LineChart } from "./LineChart";
+import { LineChart } from "../chart/LineChart";
 
 type LineChartProps = {
   title : string;

@@ -1,4 +1,4 @@
-import { LineChart } from "./LineChart"
+import { LineChart } from "../chart/LineChart"
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"

@@ -67,11 +67,11 @@
       width: 4rem;
       height: 4rem;
       border-radius: 50%;
-      border:4px solid var(--tab-h);
+      border:4px solid var(--nav-bg);
       display: flex;
       justify-content: center;
       align-items: center;
-      color: var(--tab-h);
+      color: var(--nav-bg);
       font-size: 6.4vw;
       background-color: #fff;
     }
@@ -90,11 +90,23 @@
       align-items: center;
       justify-content:center;
       border-radius: 3rem;
-      background-color: var(--tab-h);
+      background-color: var(--nav-bg);
+      li{
+        flex: 1;
+        text-align: center;
+        &:nth-child(2){
+          flex: 2;
+        }
+      }
       a{
         padding: .8rem;
         color: #fff;
         font-size: var(--fz14);
+        &.on{
+          background-color: #fff;
+          color: var(--nav-bg);
+          border-radius: 3rem;
+        }
       }
     }
    }
@@ -119,6 +131,14 @@
       .home{
         background-color: var(--surface-df);
         color: #fff;
+      }
+      .nav-list{
+        a{
+          &.on{
+            background-color: #1D478E;
+            color: #fff;
+          }
+        }
       }
     }
   }

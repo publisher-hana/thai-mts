@@ -5,6 +5,8 @@ import '@/style/dark/global.scss';
 import './components/common/common.scss'
 import { Header } from './common/Header';
 import { Home } from './pages/home/Home';
+import Domestic from './pages/domestic';
+import Overseas from './pages/overseas';
 const ScrollToTop = () => {
   const { pathname } = useLocation();
 
@@ -35,8 +37,14 @@ function App() {
       <ScrollToTop />
        <Routes>
         <Route path ="/" element={
-            <Home />
-          } />
+          <Home />
+        } />
+        <Route path ="/domestic" element={
+          <Domestic />
+        } />
+        <Route path ="/overseas" element={
+          <Overseas />
+        } />
       </Routes>
     </div>
   )
