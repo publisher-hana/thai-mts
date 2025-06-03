@@ -1,46 +1,56 @@
 @use './base';
 
 :root{
-  --fz10: 2.667vw;
-  --fz11: 2.933vw;
-  --fz12: 3.2vw;
-  --fz13: 3.467vw;
-  --fz14: 3.733vw;
-  --fz15: 4vw;
-  --fz16: 4.267vw;
-  --fz17: 4.533vw;
-  --fz18: 4.8vw;
-  --fz19: 5.067vw;
-  --fz20: 5.333vw;
-  --fz21: 5.6vw;
-  --fz22: 5.867vw;
-  --fz23: 6.133vw;
-  --fz24: 6.4vw;
-  --fz25: 6.667vw;
-  --fz26: 6.933vw;
-  --fz27: 7.2vw;
-  --fz28: 7.467vw;
-  --fz29: 7.733vw;
-  --fz30: 8vw;
-  --fz31: 8.267vw;
-  --fz32: 8.533vw;
-  --fz33: 8.8vw;
-  --fz34: 9.067vw;
-  --fz35: 9.333vw;
-  --fz36: 9.6vw;
+  --fz10: 1.0rem;
+  --fz11: 1.1rem;
+  --fz12: 1.2rem;
+  --fz13: 1.30rem;   
+  --fz14: 1.40rem;   
+  --fz15: 1.50rem;   
+  --fz16: 1.60rem;   
+  --fz17: 1.70rem;   
+  --fz18: 1.80rem;   
+  --fz19: 1.90rem;   
+  --fz20: 2.00rem;   
+  --fz21: 2.10rem;   
+  --fz22: 2.20rem;   
+  --fz23: 2.30rem;   
+  --fz24: 2.40rem;   
+  --fz25: 2.50rem;   
+  --fz26: 2.60rem;   
+  --fz27: 2.70rem;   
+  --fz28: 2.80rem;   
+  --fz29: 2.90rem;   
+  --fz30: 3.00rem;   
+  --fz31: 3.10rem;   
+  --fz32: 3.20rem;   
+  --fz33: 3.30rem;   
+  --fz34: 3.40rem;   
+  --fz35: 3.50rem;   
+  --fz36: 3.60rem;   
 
   --primary:#344152;
+  --bg-primary:#FCFCFC;
   --bg-secondary:#F5F7F9;
-  --bg-gray:#6A7D97;
+  --bg-secondary2:#ECEFF4;
+  --tab-h:#1C478E;
   --surface-df:#1C478E;
   --color-green:#008A1D;
   --color-red:#D92D20;
+  --color-orange: #EB6311;
   --txt:#435369;
   --border: #D4DBE6;
+  --btn-filed-border : #D4DBE6;
+  --btn-filed-bg : #ffffff;
+  --text-tertiary: #6A7D97;
   --bg-rise:url("/thai-mts/normal/icon_rise.png");
   --bg-fall:url("/thai-mts/normal/icon_fall.png");
+  --shadow-default: 0px 1px 8px 1px rgba(52, 65, 82, 0.10),
+                    0px 6px 8px 0px rgba(0, 67, 153, 0.10);
 }
-
+body,html{
+  font-size:10px;
+}
 .wrap{
   position: relative;
   display: flex;
@@ -48,13 +58,13 @@
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
-  background-color: #ECEFF4;
+  background-color: var(--bg-secondary2);
   section{
-    margin-bottom: 3.2vw;
-    padding:4.267vw 1rem; 
+    margin-bottom: 1.4rem;
+    padding:1.8rem 1rem; 
     background-color: #fff;
     .sec-tit{
-      margin-bottom: 4.267vw;
+      margin-bottom: 1.8rem;
       color: var(--primary);
       font-size: var(--fz20);
     }

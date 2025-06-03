@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom'
-import "./common.scss"
+import "./layoutCommon.scss"
 import { LuSearch } from "react-icons/lu";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { AiFillHome } from "react-icons/ai";
 
 export const Header = () => {
   return (
-    <>
-      <div className ='header'>
+    <div className='header'>
+      <div className ='header-top'>
         <h1 className='logo'><Link to=""></Link></h1>
         <div className='top-display'>
           SET
@@ -30,6 +30,6 @@ export const Header = () => {
           </ul>
         </div>
       </div>
-    </>
+    </div>
   )
 }

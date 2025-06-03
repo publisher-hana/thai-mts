@@ -2,6 +2,7 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import '@/style/global.scss';
 import '@/style/dark/global.scss'; 
+import './components/common/common.scss'
 import { Header } from './common/Header';
 import { Home } from './pages/home/Home';
 const ScrollToTop = () => {

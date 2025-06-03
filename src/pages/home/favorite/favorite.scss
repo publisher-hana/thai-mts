@@ -1,0 +1,38 @@
+.favorite{
+  .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .8rem;
+    padding: .8rem 0;
+    border-bottom: 1px solid var(--border);
+    font-size: var(--fz16);
+    color: var(--primary);
+    .star{
+      font-size: var(--fz16);
+      color: var(--color-orange);
+    }
+    strong{
+      margin-left: .4rem;
+    }
+    .block{
+      display: block;
+    }
+    .vol{
+       font-size: var(--fz14);
+       color: var(--text-tertiary);
+    }
+    .rate-area{
+      text-align: right;
+      .rate{
+        font-size: var(--fz14);
+        font-weight: bold;
+        color: var(--color-green);
+        &.down{
+          color: var(--color-red);
+        }
+      }
+    }
+   
+  }
+}

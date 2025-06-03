@@ -40,4 +40,24 @@
     margin: 0 auto;
   }
 }
-
+.currency{
+  .currency-box{
+    padding-right: 1.8rem;
+    .box{
+      padding:.8rem;
+      background-color: var(--bg-secondary);
+      h3{
+        margin-bottom: .8rem;
+        color: var(--primary);
+        font-size: var(--fz16);
+      }
+      .rate{
+        color: var(--color-green);
+        &.red{
+          color: var(--color-red);
+        }
+      }
+    }
+    
+  }
+}

@@ -1,0 +1,71 @@
+.recommend{
+  .slick-list{
+    overflow: visible;
+  }
+  .slide-item{
+    padding-right: 1.8rem;
+    .slide-in{
+      position: relative;
+      height: 16rem;
+      padding: .4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      background: url("/thai-mts/normal/bg_recommend.png") no-repeat;
+      background-size: 100% 100%;
+      .label{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 10.8rem;
+        height: 2.4rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-align: center;
+        color: var(--primary);
+        background-color: var(--bg-secondary);
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+      }
+      strong{
+      font-size: 4.2rem;
+      }
+      span{
+        font-size: 1.4rem;
+        &.rate{
+          color: #45FF04;
+          font-weight: bold;
+        }
+        &.down{
+          color: #FB2A2E;
+        }
+      }
+    }
+    .bottom{
+      padding: 1.6rem .8rem;
+      border-bottom-left-radius: 1.2rem;
+      border-bottom-right-radius: 1.2rem;
+      font-size: 1.2rem;
+      background: var(--bg-secondary);
+      box-shadow: var(--shadow-default);
+      strong{
+        display: block;
+        margin-bottom: .4rem;
+         color: #008A1D;
+         font-size: 1.4rem;
+         &.down{
+          color: #FB2A2E;
+         }
+      }
+      p{
+        color: var(--primary);
+        font-weight: 400;
+      }
+    }
+   
+  }
+}
+

@@ -1,17 +1,22 @@
 .dark-mode{
   --primary:#ECEFF4;
+  --bg-primary:#2C2F3A;
+  --tab-h:#2C2F3A;
   --bg-secondary:#1D1F25;
-  --surface-df:#2C2F3A;
+  --bg-secondary2:#2C2F3A;
   --txt:#B1BED1;
-  --border: #ECEFF4;
-  
+  --border: #383C4A;
+  --text-tertiary: #97A7BE;
+  --btn-filed-border : #525768;
+  --btn-filed-bg : #383C4A;
+  --shadow-default: 0px 4px 12px rgba(0, 0, 0, 0.3)
+
   background-color: var(--bg-secondary);
   
   button{
     color: #fff;
   }
   .wrap{
-    background-color: var(--bg-secondary);
     section{
       background-color: #22242B;
     }
