@@ -31,30 +31,43 @@
 .index-vals{
   .index-main{
     display: block;
-    padding-left: 1.8rem;
-    background-image: var(--bg-rise);
-    background-repeat: no-repeat;
-    background-position: 0 center;
-    background-size: 1.8rem;
-   
     &.fz14{
       font-size:var(--fz14) !important;
     }
     &.fz16{
       font-size: var(--fz16)  !important;
     }
-    &.fz28{
+    &.bigger{
       font-size: var(--fz28)  !important;
+      .price-arrow{
+        width: 2.4rem;
+        height: 2.4rem;
+        background-size: 2.4rem;
+      }
     }
   }
   font-size:var(--fz13);
   &.fall{
     color:var( --color-red);  
-    .index-main{
-      background-image: var(--bg-fall);
-    }
   }
   color:var( --color-green);
+}
+.price-arrow{
+  display: inline-block;
+  width: 1.6rem;
+  height: 1.6rem;
+  background-image:var(--bg-rise);
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  background-size: 1.8rem;
+  vertical-align: middle;
+  margin-top: -.2rem;
+  &.fall{
+    background-image:var(--bg-fall);
+  }
+  &.flat{
+    background-image:var(--bg-flat);
+  }
 }
 .btns-fileds{
   display: flex;
@@ -160,21 +173,5 @@
       }
 
     }
-  }
-}
-.price_arrow{
-  display: inline-block;
-  width: 1.6rem;
-  height: 1.6rem;
-  background-image:var(--bg-rise);
-  background-repeat: no-repeat;
-  background-position: 0 center;
-  background-size: 1.8rem;
-  vertical-align: middle;
-  &.fall{
-    background-image:var(--bg-fall);
-  }
-  &.flat{
-    background-image:var(--bg-flat);
   }
 }

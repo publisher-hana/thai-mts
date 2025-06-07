@@ -5,8 +5,10 @@ import '@/style/dark/global.scss';
 import './components/common/common.scss'
 import { Header } from './common/Header';
 import { Home } from './pages/home/Home';
-import Domestic from './pages/domestic';
+import Market from './pages/domestic';
 import Overseas from './pages/overseas';
+import Footer from './common/Footer';
+import BuySell from './pages/domestic/BuySell';
 const ScrollToTop = () => {
   const { pathname } = useLocation();
 
@@ -39,13 +41,17 @@ function App() {
         <Route path ="/" element={
           <Home />
         } />
-        <Route path ="/domestic" element={
-          <Domestic />
+        <Route path ="/domestic/market" element={
+          <Market />
         } />
-        <Route path ="/overseas" element={
+        <Route path ="/domestic/buysell" element={
+          <BuySell />
+        } />
+        <Route path ="/overseas/market" element={
           <Overseas />
         } />
       </Routes>
+      <Footer />
     </div>
   )
 }

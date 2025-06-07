@@ -10,7 +10,9 @@ interface Props {
 const IndexVal = ({ num, className1,className2, num2 }: Props) => {
   return (
     <div className={`index-vals ${className1 || ''}`}>
-      <strong className={`index-main ${className2 || ''}`}>{num}</strong>
+      <strong className={`index-main ${className2 || ''}`}>
+        <span className={`price-arrow  ${className1}`}></span>{num}
+      </strong>
       <span>{num2}</span>
     </div>
   )

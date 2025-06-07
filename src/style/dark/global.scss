@@ -1,9 +1,11 @@
 .dark-mode{
   --primary:#ECEFF4;
+  --bg-base:#161A1D;
   --bg-primary:#2C2F3A;
   --nav-bg:#2C2F3A;
   --bg-secondary:#1D1F25;
   --bg-secondary2:#2C2F3A;
+  --bg-sec:#22242B;
   --color-green:#3DC66B;
   --bg-dark:#161A1D;
   --txt:#B1BED1;
@@ -11,16 +13,16 @@
   --text-tertiary: #97A7BE;
   --btn-filed-border : #525768;
   --btn-filed-bg : #383C4A;
+  --bg-button-buy:#209AEA;
+  --bg-button-sell:#CB5683;
+  --bg-button-chg:#E3AF25;
   --shadow-default: 0px 4px 12px rgba(0, 0, 0, 0.3)
+
 
   background-color: var(--bg-secondary);
   
   button{
     color: #fff;
   }
-  .wrap{
-    section{
-      background-color: #22242B;
-    }
-  }
+  
 }

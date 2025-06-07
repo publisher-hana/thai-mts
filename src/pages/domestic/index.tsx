@@ -6,14 +6,14 @@ import Realtime from "../../components/common/realTimePicks/Realtime"
 import Recommend from "../../components/common/recommend/Recommend"
 import TopMovers from "../../components/common/topMovers/TopMovers"
 import Currency from "../home/Currency"
-import './domestic.scss'
-const Domestic = () => {
+import '../pages.scss'
+const Market = () => {
   return (
     <>
       <section className="market-stock">
         <div className="top-sec">
           <div className="value">
-            <IndexVal num="1,445.91" className1="fz16" className2="fz28" num2="+15.00 (+0.14%)"/>
+            <IndexVal num="1,445.91" className1="fz16" className2="bigger" num2="+15.00 (+0.14%)"/>
           </div>
           <div className="val-box">
             <ul>
@@ -35,4 +35,4 @@ const Domestic = () => {
   )
 }
 
-export default Domestic
+export default Market

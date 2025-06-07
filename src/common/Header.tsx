@@ -24,8 +24,8 @@ export const Header = () => {
         <div className='inner'>
           <Link to="" className='home'><span className='blind'>home</span><AiFillHome /></Link>
           <ul className='nav-list'>
-            <li><Link to="/domestic" className={`${location.pathname.startsWith("/domestic") ? "on" : ""}`}>หุ้นไทย</Link></li>
-            <li><Link to="/overseas" className={`${location.pathname.startsWith("/overseas") ? "on" : ""}`}>หุ้นต่างประเทศ</Link></li>
+            <li><Link to="/domestic/market" className={`${location.pathname.startsWith("/domestic") ? "on" : ""}`}>หุ้นไทย</Link></li>
+            <li><Link to="/overseas/market" className={`${location.pathname.startsWith("/overseas") ? "on" : ""}`}>หุ้นต่างประเทศ</Link></li>
             <li><Link to="">TFEX</Link></li>
             <li><Link to="">กองทุน</Link></li>
           </ul>

@@ -109,7 +109,7 @@ const TopMovers = () => {
                     </div>
                   </td>
                   <td className={`right ${item.change}`}>{item.last.toFixed(2)}</td>
-                  <td className={`right ${item.change}`}>{item.chg.toFixed(2)}<span className={`price_arrow ${item.change}`}></span></td>
+                  <td className={`right ${item.change}`}>{item.chg.toFixed(2)}<span className={`price-arrow ${item.change}`}></span></td>
                   <td className={`right ${item.change}`}>{item.chgper.toFixed(2)}</td>
                 </tr>
               ))}
@@ -144,7 +144,7 @@ const TopMovers = () => {
                     </div>
                   </td>
                   <td className={`right ${item.change}`}>{item.last.toFixed(2)}</td>
-                  <td className={`right ${item.change}`}>{item.chg.toFixed(2)}<span className={`price_arrow ${item.change}`}></span></td>
+                  <td className={`right ${item.change}`}>{item.chg.toFixed(2)}<span className={`price-arrow ${item.change}`}></span></td>
                   <td className={`right ${item.change}`}>{item.chgper.toFixed(2)}</td>
                 </tr>
               ))}
