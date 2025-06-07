@@ -1,9 +1,9 @@
 import './home.scss'
 import Index from '../../components/home/Index'
-import Recommend from './recommend/Recommend';
-import Favorite from './favorite/Favorite';
-import News from './news/News';
 import Currency from './Currency';
+import Favorite from '../../components/common/favorite/Favorite';
+import Recommend from '../../components/common/recommend/Recommend';
+import News from '../../components/common/news/News';
 
 export const Home = () => {
   return (

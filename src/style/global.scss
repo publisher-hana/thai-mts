@@ -33,11 +33,13 @@
   --bg-primary:#FCFCFC;
   --bg-secondary:#F5F7F9;
   --bg-secondary2:#ECEFF4;
+  --bg-dark:#F5F7F9;
   --nav-bg:#1C478E;
   --surface-df:#1C478E;
   --color-green:#008A1D;
   --color-red:#D92D20;
   --color-orange: #EB6311;
+  --color-yellow: #B5940F;
   --txt:#435369;
   --border: #D4DBE6;
   --btn-filed-border : #D4DBE6;
@@ -45,13 +47,35 @@
   --text-tertiary: #6A7D97;
   --bg-rise:url("/thai-mts/normal/icon_rise.png");
   --bg-fall:url("/thai-mts/normal/icon_fall.png");
+  --bg-flat:url("/thai-mts/normal/icon_hold_yellow.png");
   --shadow-default: 0px 1px 8px 1px rgba(52, 65, 82, 0.10),
                     0px 6px 8px 0px rgba(0, 67, 153, 0.10);
 }
+body.mobile-frame {
+  background: #dcdcdc; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+  padding: 40px;
+}
+
+.mobile-content {
+  width: 375px;
+  height: 100%;
+  background: white;
+  border-radius: 30px;
+  box-shadow: 0 0 0 12px black; 
+  overflow: hidden;
+}
+
 body,html{
   font-size:10px;
+  height: 100vh;
 }
 .wrap{
+  // max-width:375px;
+  margin:0 auto;
   position: relative;
   display: flex;
   flex-direction: column;

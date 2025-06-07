@@ -12,6 +12,8 @@
       text-align: center;
       flex: 1;
       button{
+        width: 100%;
+        height: 100%;
         padding: .8rem;
         color: var(--text-tertiary);
         font-size: var(--fz14);
@@ -40,6 +42,9 @@
     }
     &.fz16{
       font-size: var(--fz16)  !important;
+    }
+    &.fz28{
+      font-size: var(--fz28)  !important;
     }
   }
   font-size:var(--fz13);
@@ -76,5 +81,100 @@
       transform: translateY(-50%);
     }
     
+  }
+}
+
+.table-wrapper {
+  position: relative;
+  //  width: calc(100% + 2rem); 
+  margin-left: -1rem;
+  margin-right: -1rem;
+  .scroll-indicator {
+    position: absolute;
+    top: -10%;
+    z-index: 10;
+    font-size: 18px;
+    font-size: 3rem;
+    color: var(--color-orange);
+    cursor: pointer;
+    &.left {
+      left: 20%;
+    }
+    &.right {
+      right: 0;
+    }
+  }
+
+  .scroll-container {
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .scroll-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+}
+
+
+.table-style{
+  width: 100%;
+  border-collapse: collapse;
+  th,td{
+    border: 1px solid var(--border);
+    white-space: nowrap;
+    color: var(--primary);
+    &.left{
+      text-align: left;
+    }
+    &.right{
+      text-align: right;
+    }
+  }
+  thead{
+    th{
+      font-size: var(--fz14);
+      padding: .8rem;
+      background-color: var(--bg-secondary2);
+      border-left: 1px solid var(--border);
+    }
+  }
+  tbody{
+    td{
+      padding:.8rem;
+      font-size: var(--fz16);
+      border-bottom: 1px solid var(--border);
+      font-weight: 500;
+      .flex{
+        display: flex;
+        align-items: center;
+        gap:.4rem;
+      }
+      &.rise{
+        color: var(--color-green);
+      }
+      &.fall{
+        color: var(--color-red);
+      }
+      &.flat{
+        color: var(--color-yellow);
+      }
+
+    }
+  }
+}
+.price_arrow{
+  display: inline-block;
+  width: 1.6rem;
+  height: 1.6rem;
+  background-image:var(--bg-rise);
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  background-size: 1.8rem;
+  vertical-align: middle;
+  &.fall{
+    background-image:var(--bg-fall);
+  }
+  &.flat{
+    background-image:var(--bg-flat);
   }
 }

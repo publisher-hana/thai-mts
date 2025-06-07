@@ -1,3 +1,39 @@
+.market-stock{
+  .top-sec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .index-vals{
+      font-size: var(--fz16);
+    }
+    .val-box{
+      width: 50%;
+      padding:1.2rem;
+      background-color: var(--bg-dark);
+      ul{
+        li{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .text{
+            font-size: var(--fz12);
+            color: var(--text-tertiary);
+          }
+          .val{
+            font-size: var(--fz14);
+            color: var(--primary);
+            .hight{
+              color: var(--color-green);
+            }
+            .row{
+              color: var(--color-red);
+            }
+          }
+        }
+      }
+    }
+  }
+}
 .apexcharts-xaxis-label tspan {
   font-weight: 400 !important;
 }

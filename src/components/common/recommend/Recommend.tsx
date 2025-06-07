@@ -2,7 +2,7 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import './recommend.scss'
-import Recommend_Item from '../../../components/home/Recommend_Item';
+import Recommend_Item from './Recommend_Item';
 const Recommend = () => {
   let setting = {
     dots:false,

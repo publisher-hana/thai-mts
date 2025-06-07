@@ -1,6 +1,6 @@
-import Favorite_row from '../../../components/home/Favorite_row'
 import { SlArrowDown } from "react-icons/sl";
 import './favorite.scss'
+import Favorite_row from "./Favorite_row";
 const Favorite = () => {
   return (
     <section className='favorite'>
@@ -25,6 +25,9 @@ const Favorite = () => {
         h={22}
         res={false}
         className="down"
+        currentVal="495.00"
+        currentRate1="-4.08"
+        currentRate2="-1.50"
       />
        <Favorite_row
         title = 'S50Z24'
@@ -35,6 +38,9 @@ const Favorite = () => {
         w={50}
         h={22}
         res={false}
+        currentVal="495.00"
+        currentRate1="+0.50"
+        currentRate2="+0.50"
       />
       <Favorite_row
         title = 'S50Z24'
@@ -45,6 +51,9 @@ const Favorite = () => {
         w={50}
         h={22}
         res={false}
+        currentVal="495.00"
+        currentRate1="+0.50"
+        currentRate2="+0.50"
       />
        <Favorite_row
         title = 'S50Z24'
@@ -55,6 +64,9 @@ const Favorite = () => {
         w={50}
         h={22}
         res={false}
+        currentVal="495.00"
+        currentRate1="+0.50"
+        currentRate2="+0.50"
       />
     </section>
   )

@@ -1,5 +1,5 @@
 import { MdOutlineStar } from "react-icons/md";
-import { LineChart } from "../chart/LineChart";
+import { LineChart } from "../../chart/LineChart";
 
 type LineChartProps = {
   title : string;
@@ -11,9 +11,12 @@ type LineChartProps = {
   h?: number;
   res? : boolean;
   className? : string;
+  currentVal : string;
+  currentRate1 : string;
+  currentRate2 : string;
 };
 
-const Favorite_row = ({ title, type, data, labels, borderWidth, w, h, res, className }: LineChartProps) => {
+const Favorite_row = ({ title, type, data, labels, borderWidth, w, h, res, className, currentVal, currentRate1, currentRate2}: LineChartProps) => {
   return (
     <div className='row'>
       <div>
@@ -33,8 +36,8 @@ const Favorite_row = ({ title, type, data, labels, borderWidth, w, h, res, class
         />
       </div>
       <div className="rate-area">
-        <span className="current-price">495.00</span>
-        <span className={`block rate ${className}`}>-20,000(-20.00%)</span>
+        <span className="current-price">{currentVal}</span>
+        <span className={`block rate ${className}`}>{currentRate1}({currentRate2}%)</span>
       </div>
     </div>
   )
