@@ -47,7 +47,7 @@ const Realtime = () => {
               <tr key={idx}>
                 <td>{item.time}</td>
                 <td className={`left ${item.change}`}>{item.stock}</td>
-                <td className={`right ${item.change}`}>{item.last}</td>
+                <td className={`right ${item.change}`}>{item.last.toFixed(2)}</td>
                 <td className="right">{item.singlePrice}</td>
               </tr>
             ))}

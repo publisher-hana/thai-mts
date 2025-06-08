@@ -53,6 +53,7 @@
   --bg-button-buy:#1774EB;
   --bg-button-sell:#CB5683;
   --bg-button-chg:#FFD015;
+  --base-h:4.4rem;
   --shadow-default: 0px 1px 8px 1px rgba(52, 65, 82, 0.10),
                     0px 6px 8px 0px rgba(0, 67, 153, 0.10);
   --shadow-top:inset 0 1px 0 0 rgba(0, 0, 0, 0.1);
@@ -98,6 +99,16 @@ body,html{
       color: var(--primary);
       font-size: var(--fz20);
     }
+    .tit-area{
+      margin-bottom: 1.8rem;
+      .sec-tit{
+        margin-bottom: 0;
+      }
+      .sub-tit{
+        color: var(--txt);
+        font-size: var(--fz14);
+      }
+    }
   }
   .slick-prev,.slick-next{
     content: '';
@@ -108,3 +119,12 @@ body,html{
   justify-content: flex-end;
 }
 
+.txt-rise{
+  color: var(--color-green);
+}
+.txt-fall{
+  color: var(--color-red);
+}
+.txt-flat{
+  color: var(--color-yellow);
+}

@@ -78,7 +78,7 @@
   .filed-item{
     position: relative;
     width: 50%;
-    height: 4.4rem;
+    height: var(--base-h);
     font-weight: bold;
     padding: 0 1.6rem;
     background:  var(--btn-filed-bg);
@@ -92,6 +92,15 @@
       right: 1.6rem;
       top: 50%;
       transform: translateY(-50%);
+    }
+    &.full{width: 100%;}
+    &.w120{
+      padding: 0 .8rem;
+      width: 12.8rem;
+      font-size: 1.4rem;
+      .ico-arr{
+        right: 1.2rem;
+      }
     }
     
   }
@@ -132,8 +141,14 @@
 .table-style{
   width: 100%;
   border-collapse: collapse;
+  &.bd-none{
+    th,td{
+      border:none;
+    }
+  }
   th,td{
     border: 1px solid var(--border);
+    background-color: var(--bg-sec);
     white-space: nowrap;
     color: var(--primary);
     &.left{
@@ -173,5 +188,112 @@
       }
 
     }
+  }
+}
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: sans-serif;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox-label input[type="checkbox"] {
+  display: none;
+}
+
+.custom-checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background: transparent;
+  border:2px solid var(--border);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.2s ease-in-out;
+}
+.custom-checkbox svg {
+  display: none;
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+/* checked 상태일 때 스타일 */
+.checkbox-label input[type="checkbox"]:checked + .custom-checkbox {
+  background-color: #E66923; /* 주황색 */
+  }
+
+.checkbox-label input[type="checkbox"]:checked + .custom-checkbox svg {
+  display: block;
+  fill: white;
+}
+.title {
+  font-weight: 500;
+  color: var(--primary);
+}
+
+.date-container{
+  display: flex;
+  align-items: center;
+  gap:.4rem;
+  font-size: var(--fz18);
+  input{
+    width: 9.9rem;
+    height: var(--base-h);
+    border: 1px solid var(--border);
+    border-radius:.8rem;
+    padding:.8rem;
+    color: var(--primary);
+    font-size: var(--fz16);
+    font-weight: 500;
+    background: var(--btn-filed-bg);
+  }
+}
+
+.date-container{
+  .react-datepicker__header{
+    background:transparent;
+    border-bottom: none;
+  }
+  .react-datepicker{
+    width:218px;
+    font-size: 1.2rem;
+    background-color:var(--bg-primary);
+    color: var(--primary);
+  }
+  h2.react-datepicker__current-month{
+    padding: 1rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--primary);
+  }
+  .react-datepicker__navigation-icon{
+    font-size: 10px;
+    &::before{
+      top:12px;
+      border-width:1px 1px 0 0;
+      border-color:var(--primary)
+    }
+  }
+  .react-datepicker__navigation-icon--previous::before{
+      right: 0;
+  }
+  .react-datepicker__navigation-icon--next::before{
+    left: 0;
+  }
+  .react-datepicker__day{
+    width:26px;
+    padding: .4rem;
+    font-size: var(--fz16);
+    box-sizing: border-box;
+  }
+  .react-datepicker__day-name, .react-datepicker__day, .react-datepicker__time-name{
+    color: var(--primary);
+  }
+  .react-datepicker__day--selected{
+     background-color:var(--color-orange);
+     color: #fff;
   }
 }

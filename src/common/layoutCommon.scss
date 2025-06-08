@@ -163,7 +163,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        color: var(--primary);
+        color: #344152;
         img{
           width: 2.4rem;
           height: 2.4rem;
@@ -244,6 +244,78 @@
           }
           &.on::before{
             background-image: url('/thai-mts/normal/foo_menu_selected.png');
+          }
+        }
+      }
+    }
+  }
+}
+
+.dark-mode{
+  .footer{
+    ul{
+      li{
+        a{
+          color: #B1BED1;
+        }
+      &:first-child{
+        a{
+          &::before{
+            background-image: url('/thai-mts/dark/foo_market.png');
+          }
+          &.on::before{
+            background-image: url('/thai-mts/dark/foo_market_selected.png');
+          }
+        }
+      }
+       &:nth-child(2){
+          a{
+            &::before{
+              background-image: url('/thai-mts/dark/foo_buysell.png');
+            }
+            &.on::before{
+              background-image: url('/thai-mts/dark/foo_buysell_selected.png');
+            }
+          }
+        }
+        &:nth-child(3){
+          a{
+            &::before{
+              background-image: url('/thai-mts/dark/foo_portfolio.png');
+            }
+            &.on::before{
+              background-image: url('/thai-mts/dark/foo_portfolio_selected.png');
+            }
+          }
+        }
+        &:nth-child(4){
+          a{
+            &::before{
+              background-image: url('/thai-mts/dark/foo_scan.png');
+            }
+            &.on::before{
+              background-image: url('/thai-mts/dark/foo_scan_selected.png');
+            }
+          }
+        }
+        &:nth-child(5){
+          a{
+            &::before{
+              background-image: url('/thai-mts/dark/foo_chart.png');
+            }
+            &.on::before{
+              background-image: url('/thai-mts/dark/foo_chart_selected.png');
+            }
+          }
+        }
+        &:nth-child(6){
+          a{
+            &::before{
+              background-image: url('/thai-mts/dark/foo_menu.png');
+            }
+            &.on::before{
+              background-image: url('/thai-mts/dark/foo_menu_selected.png');
+            }
           }
         }
       }
